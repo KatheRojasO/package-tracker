@@ -1,0 +1,13 @@
+.card .container{
+    background-color: var(--beige);
+    border-radius: 20px;
+    margin: var(--space-big);
+}
+
+.status {
+    color: var(--lemon-green);
+}
+
+.id {
+    font-weight: bold;
+}

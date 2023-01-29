@@ -1,6 +1,8 @@
 @import "./base/layout.css";
 @import "./base/variables.css";
+@import "./base/typography.css";
 
 
 @import "./components/Header.css";
 @import "./pages/TrackingSection.css";
+@import "./components/PackageCard.css";
