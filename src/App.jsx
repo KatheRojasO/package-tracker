@@ -1,6 +1,7 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./css/styles.css";
-import Header from './components/Header';
+import PackageSection from './pages/PackageSection';
 import TrackingSection from './pages/TrackingSection';
 
 export default function App() {
@@ -8,15 +9,17 @@ export default function App() {
  
 
   return (
-    <main>
-      <Header />
+    <>
       <TrackingSection />
+      <BrowserRouter>
+        <Routes>
+        <Route path="/parcel/:parcel_id" element={<PackageSection parcelId={"parcel_id"} />} />
 
-      <h1>User List</h1>
-      <ul>
-        
-      </ul>
-    </main>
+        </Routes>
+      </BrowserRouter>
+
+      
+    </>
   );
 }
 

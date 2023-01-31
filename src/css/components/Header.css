@@ -19,12 +19,9 @@ nav .container {
 }
 
 .nav-btn:hover, 
-.nav-btn:visited {
+.nav-btn:visited,
+.nav-btn:focus {
   background-color: #fed6b8;
   border-radius: 40px;
-}
-
-.nav-btn:active {
-    background-color: var(--lemon-green);
 }
 
