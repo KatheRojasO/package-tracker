@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import PackageSection from "../pages/PackageSection";
 
 export default function PackageCard({ parcel }) {
@@ -15,14 +15,17 @@ export default function PackageCard({ parcel }) {
   } = parcel;
 
   return (
-    <div className="card">
-      <div className="container">
-        <h2>{sender}</h2>
-        <p className="status">{status}</p>
-        <p>
-          Parcel code: <span className="id">{parcel_id}</span>
-        </p>
+      
+    <Link to={`parcel/${parcel_id}`}>
+      <div className="card">
+        <div className="container">
+          <h2>{sender}</h2>
+          <p className="status">{status}</p>
+          <p>
+            Parcel code: <span className="id">{parcel_id}</span>
+          </p>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }

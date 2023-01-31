@@ -1,22 +1,10 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import Header from "../components/Header";
 import PackageCard from "../components/PackageCard";
 
-export default function TrackingSection() {
-  const [deliveries, setDeliveries] = useState([]);
+export default function TrackingSection({deliveries}) {
+  
   const [showDelivered, setShowDelivered] = useState(false);
-
-  const fetchData = () => {
-    return axios
-      .get("https://my.api.mockaroo.com/insta-orders.json?key=e49e6840")
-      .then((response) => setDeliveries(response.data));
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
 
   const parcelCards = () => {
     let filteredParcels = [];
@@ -30,8 +18,7 @@ export default function TrackingSection() {
       );
     }
     return filteredParcels.map((filteredParcel) => (
-        <PackageCard parcel={filteredParcel} />
-      
+        <PackageCard parcel={filteredParcel} /> 
     ));
   };
 
