@@ -11,7 +11,7 @@ export default function PackageSection({ deliveries }) {
   );
 
   return (
-    <div>
+    <div className="parcel">
       <PackageInfo parcel= {parcel[0]} />
     </div>
   );

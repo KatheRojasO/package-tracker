@@ -1,0 +1,38 @@
+.card-header,
+.header,
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.card-header {
+    justify-content: space-between;
+}
+
+.header{
+    margin-left: var(--space-big); 
+}
+
+.header h1 {
+    margin-left: 110px;
+}
+
+.location {
+    margin-bottom: var(--space-medium)
+}
+
+.location-icon {
+    margin: var(--space-big) var(--space-small) 0 0;
+}
+
+.location-name {
+    margin-top: var(--space-big);
+}
+
+.additional-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--space-medium);
+    text-align: justify;
+    text-justify: inter-word;
+}
