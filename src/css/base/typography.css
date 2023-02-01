@@ -3,7 +3,7 @@ h2 {
 }
 
 p {
-  margin: 10px 0 0px 0;
+  margin: var(--space-small) 0 0px 0;
 }
 
 button {

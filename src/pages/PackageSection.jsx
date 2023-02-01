@@ -1,18 +1,18 @@
-import React from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import React from "react";
+import { useParams } from "react-router-dom";
+import PackageInfo from "../components/PackageInfo";
 
+export default function PackageSection({ deliveries }) { 
 
-export default function PackageSection({deliveries}) {
   const params = useParams();
-  const navigate = useNavigate();
 
-  console.log(params.parcel_id)
-
-  
+  const parcel = deliveries.filter(
+    (parcel) => parcel.parcel_id === params.parcel_id
+  );
 
   return (
     <div>
-        <button onClick={() => navigate(-1)}>go back</button>
+      <PackageInfo parcel= {parcel[0]} />
     </div>
-  )
+  );
 }

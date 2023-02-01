@@ -1,21 +1,9 @@
-import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import PackageSection from "../pages/PackageSection";
 
 export default function PackageCard({ parcel }) {
-  const {
-    status,
-    eta,
-    parcel_id,
-    sender,
-    location_name,
-    location_coordinate_latitude,
-    location_coordinate_longitude,
-    notes,
-  } = parcel;
+  const { status, parcel_id, sender } = parcel;
 
   return (
-      
     <Link to={`parcel/${parcel_id}`}>
       <div className="card">
         <div className="container">

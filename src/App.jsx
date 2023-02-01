@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./css/styles.css";
-import PackageSection from './pages/PackageSection';
-import TrackingSection from './pages/TrackingSection';
+import PackageSection from "./pages/PackageSection";
+import TrackingSection from "./pages/TrackingSection";
 
 export default function App() {
-
   const [deliveries, setDeliveries] = useState([]);
 
   const fetchData = () => {
@@ -18,20 +17,21 @@ export default function App() {
   useEffect(() => {
     fetchData();
   }, []);
-  
- 
 
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<TrackingSection deliveries={deliveries} />} />
-          <Route path="/parcel/:parcel_id" element={<PackageSection deliveries={deliveries} />} />
+          <Route
+            path="/"
+            element={<TrackingSection deliveries={deliveries} />}
+          />
+          <Route 
+            path="/parcel/:parcel_id"
+            element={<PackageSection deliveries={deliveries} />}
+          />
         </Routes>
-      </BrowserRouter>   
+      </BrowserRouter>
     </>
   );
 }
-
-
-

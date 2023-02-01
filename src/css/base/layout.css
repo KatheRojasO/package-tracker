@@ -20,3 +20,8 @@ button {
   padding: var(--space-small);
 }
 
+a {
+  text-decoration: none;
+  color: var(--dark-blue);
+}
+
