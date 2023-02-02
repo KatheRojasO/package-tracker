@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Map from "./Map";
 import locationIcon from "../assets/icons/location-icon.png";
 import goBackIcon from "../assets/icons/go-back-icon.png";
+import img from "../assets/images/parcel.png"
 
 export default function PackageInfo({ parcel }) {
   const {
@@ -19,16 +20,16 @@ export default function PackageInfo({ parcel }) {
   const navigate = useNavigate();
 
   return (
-    <div className="card">
+    <div className="container">
       <div className="header">
         <img src={goBackIcon} className="back-icon" alt="go-back-icon" onClick={() => navigate(-1)} />
-        <h1>{sender} Parcel</h1>
+        <h2 className="company-name">InstaPacket</h2>
       </div>
-      <div className="container">
+      <div className="card">
         <div className="card-header">
           <h2>{sender}</h2>
           <span>
-            Parcel code: <span className="id">{parcel_id}</span>
+            Parcel code: <b>{parcel_id}</b>
           </span>
         </div>
         <span className="status">{status}</span>
@@ -45,14 +46,11 @@ export default function PackageInfo({ parcel }) {
           longitude={location_coordinate_longitude}
         />
         <div className="additional-info">
-          <span>
-            Arrival: <span className="eta">{eta}</span>
-          </span>
-          <span>
-            Notes: <span className="notes">{notes}</span>
-          </span>
+          <span>Arrival: <b>{eta}</b></span>
+          <span>Notes: <b>{notes}</b></span>
         </div>
       </div>
+      <img src={img} className="bg-img" alt="bg-img"/>
     </div>
   );
 }

@@ -26,9 +26,9 @@ export default function TrackingSection({ deliveries }) {
   };
 
   return (
-    <>
+    <div className="tracking-section">
       <Header setShowDelivered={setShowDelivered} />
       {parcelCards()}
-    </>
+    </div>
   );
 }

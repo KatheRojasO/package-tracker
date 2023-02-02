@@ -12,6 +12,7 @@ body {
 }
 
 .container {
+  position: relative;
   padding: var(--space-big);
 }
 
@@ -25,14 +26,20 @@ a {
   color: var(--dark-blue);
 }
 
-.card .container{
+.container .card {
   background-color: var(--beige);
   border-radius: 20px;
-  margin: var(--space-big);
+  padding: var(--space-big);
 }
 
 .status {
   color: var(--lemon-green);
+}
+
+
+.container .header {
+  padding: var(--space-medium) 0;
+  justify-content: space-between;
 }
 
 

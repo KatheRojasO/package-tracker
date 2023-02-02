@@ -12,9 +12,10 @@ button {
   font-weight: bold;
 }
 
-.id,
-.notes,
-.eta,
 .location-name {
   font-weight: bold;
+}
+
+input {
+  font-family: "Poppins", sans-serif;
 }
