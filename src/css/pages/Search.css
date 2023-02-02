@@ -1,0 +1,58 @@
+.login {
+  position: relative;
+  text-align: center;
+}
+
+.login .hero-img {
+  width: 100%;
+}
+
+.login .container {
+  height: 200px;
+  position: absolute;
+  bottom: -140px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 0 5px #333;
+}
+
+.container .login-card {
+  background-color: var(--beige);
+  height: 200px;
+  border-radius: 20px;
+}
+
+.login-card h2,
+.login-card p, 
+.input-container {
+    padding: var(--space-medium) var(--space-medium) 0 var(--space-medium)  ;
+}
+
+.input-container {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container img {
+  position: absolute;
+  right: 110px;
+  cursor: pointer;
+}
+
+.search-icon {
+  min-width: 30px;
+}
+
+.input-field {
+  width: 200px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.input-field:focus {
+  border: 2px solid var(--dark-blue);
+}

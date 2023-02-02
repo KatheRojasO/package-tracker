@@ -1,7 +1,7 @@
 import React from "react";
 import { GoogleMap, Marker, LoadScript } from "@react-google-maps/api";
 
-export default function Map({ location, latitude, longitude }) {
+export default function Map({ latitude, longitude }) {
   const center = {
     lat: parseInt(latitude),
     lng: parseInt(longitude),

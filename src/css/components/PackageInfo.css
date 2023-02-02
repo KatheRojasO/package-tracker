@@ -1,38 +1,42 @@
 .card-header,
 .header,
 .location {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .card-header {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
-.header{
-    margin-left: var(--space-big); 
+.header {
+  margin-left: var(--space-big);
+}
+
+.back-icon {
+  cursor: pointer;
 }
 
 .header h1 {
-    margin-left: 110px;
+  margin-left: 20px;
 }
 
 .location {
-    margin-bottom: var(--space-medium)
+  margin-bottom: var(--space-medium);
 }
 
 .location-icon {
-    margin: var(--space-big) var(--space-small) 0 0;
+  margin: var(--space-big) var(--space-small) 0 0;
 }
 
 .location-name {
-    margin-top: var(--space-big);
+  margin-top: var(--space-big);
 }
 
-.additional-info{
-    display: flex;
-    flex-direction: column;
-    margin-top: var(--space-medium);
-    text-align: justify;
-    text-justify: inter-word;
+.additional-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--space-medium);
+  text-align: justify;
+  text-justify: inter-word;
 }

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./css/styles.css";
+import Search from "./pages/Search";
 import PackageSection from "./pages/PackageSection";
 import TrackingSection from "./pages/TrackingSection";
 
@@ -22,6 +23,10 @@ export default function App() {
     <>
       <BrowserRouter>
         <Routes>
+        <Route
+            path="/search"
+            element={<Search phone={deliveries.user_phone} />}
+          />
           <Route
             path="/"
             element={<TrackingSection deliveries={deliveries} />}

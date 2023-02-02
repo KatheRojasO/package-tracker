@@ -3,6 +3,7 @@
 @import "./base/typography.css";
 
 
+@import "./pages/Search.css";
 @import "./components/Header.css";
 @import "./pages/TrackingSection.css";
 @import "./components/PackageCard.css";

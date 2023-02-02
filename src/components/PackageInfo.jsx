@@ -10,7 +10,6 @@ export default function PackageInfo({ parcel }) {
     eta,
     parcel_id,
     sender,
-    location_id,
     location_name,
     location_coordinate_latitude,
     location_coordinate_longitude,
@@ -23,7 +22,7 @@ export default function PackageInfo({ parcel }) {
     <div className="card">
       <div className="header">
         <img src={goBackIcon} className="back-icon" alt="go-back-icon" onClick={() => navigate(-1)} />
-        <h1>{sender}</h1>
+        <h1>{sender} Parcel</h1>
       </div>
       <div className="container">
         <div className="card-header">
@@ -42,7 +41,6 @@ export default function PackageInfo({ parcel }) {
           <span className="location-name">{location_name}</span>
         </div>
         <Map
-          location={location_id}
           latitude={location_coordinate_latitude}
           longitude={location_coordinate_longitude}
         />
