@@ -14,6 +14,8 @@ body {
 .container {
   position: relative;
   padding: var(--space-big);
+  padding-bottom: 0;
+  max-width: 960px;
 }
 
 button {
@@ -42,5 +44,24 @@ a {
   justify-content: space-between;
 }
 
+@media screen and (min-width: 43rem){
+  .container {
+    padding: var(--space-big) var(--space-xbig) 0;
+  }
+  
+}
+
+@media screen and (min-width: 62rem){
+  .container {
+    padding: var(--space-big) var(--space-xxbig) 0;
+  }
+  
+}
+
+@media screen and (min-width: 82rem){
+  .container {
+    padding: var(--space-big) var(--space-xxbig) 0;
+  }
+}
 
 

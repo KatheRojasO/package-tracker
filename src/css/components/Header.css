@@ -15,6 +15,7 @@
 .company-name {
   margin: 0;
   color: var(--lemon-green);
+  font-size: 16px;
 }
 
 .nav-btn {
@@ -30,4 +31,25 @@
   background-color: #fed6b8;
   border-radius: 40px;
 }
+
+@media screen and (min-width: 43rem){
+  .navbar {
+    height: 80px;
+  }
+
+  .navbar .container {
+    padding: var(--space-medium) var(--space-xbig);
+  }
+
+  .company-name {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 62rem){
+  .navbar .container {
+    padding: var(--space-medium) var(--space-xxbig);
+  }
+}
+
 

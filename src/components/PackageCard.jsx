@@ -6,16 +6,14 @@ export default function PackageCard({ parcel }) {
 
   return (
     <Link to={`parcel/${parcel_id}`}>
-      <div className="card">
-        <div className="container">
+      <div className="container">
+        <div className="card">
           <div className="icon-container">
             <h2>{sender}</h2>
             <img src={nextIcon} alt="next-icon" />
           </div>
-          <p className="status">{status}</p>
-          <p>
-            Parcel code: <span className="id">{parcel_id}</span>
-          </p>
+          <span className="status">{status}</span><br></br>
+          <span> Parcel code: <b>{parcel_id}</b> </span>
         </div>
       </div>
     </Link>
