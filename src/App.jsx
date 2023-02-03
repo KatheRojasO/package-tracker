@@ -12,7 +12,14 @@ export default function App() {
   const fetchData = () => {
     return axios
       .get("https://my.api.mockaroo.com/insta-orders.json?key=e49e6840")
-      .then((response) => setDeliveries(response.data));
+      .then((response) => {
+        localStorage.setItem("userData", JSON.stringify(response.data))
+        setDeliveries(response.data)
+      })
+      .catch(() => {
+        let cachedData = localStorage.getItem("userData")
+        setDeliveries(JSON.parse(cachedData))
+      })
   };
 
   useEffect(() => {
