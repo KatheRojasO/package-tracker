@@ -4,6 +4,7 @@ import img from "../assets/images/hero-mobile.jpg";
 import searchIcon from "../assets/icons/search-button.png";
 
 export default function Search({ deliveries }) {
+  const Swal = require('sweetalert2');
   const [phoneInput, setPhoneInput] = useState("");
   const navigate = useNavigate();
 
@@ -15,7 +16,11 @@ export default function Search({ deliveries }) {
     const userPhone = deliveries[0].user_phone
 
     if (phoneInput !== userPhone) {
-      alert("No parcels");
+      Swal.fire(
+        'Seems something is wrong',
+        'The user you typed does not exist',
+        'warning'
+      )
     } else {
       navigate("/parcels");
     }

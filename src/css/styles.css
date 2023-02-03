@@ -4,6 +4,7 @@
 @import "./base/variables.css";
 @import "./base/typography.css";
 
+
 /* components */
 @import "./pages/Search.css";
 @import "./components/Header.css";
