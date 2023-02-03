@@ -6,6 +6,6 @@
 @import "./pages/Search.css";
 @import "./components/Header.css";
 @import "./pages/TrackingSection.css";
-@import "./components/PackageCard.css";
-@import "./components/PackageInfo.css";
+@import "./components/ParcelCard.css";
+@import "./components/ParcelInfo.css";
 @import "./components/Map.css"

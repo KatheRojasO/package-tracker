@@ -6,7 +6,7 @@ import locationIcon from "../assets/icons/location-icon.png";
 import goBackIcon from "../assets/icons/go-back-icon.png";
 import img from "../assets/images/parcel.png"
 
-export default function PackageInfo({ parcel }) {
+export default function ParcelInfo({ parcel }) {
   const {
     status,
     eta,

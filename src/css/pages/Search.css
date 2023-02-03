@@ -27,7 +27,8 @@
   height: 160px;
   border-radius: 20px;
   margin: var(--space-medium);
-  padding: var(--space-medium) var(--space-big)var(--space-small)var(--space-big);
+  padding: var(--space-medium) var(--space-big) var(--space-small)
+    var(--space-big);
 }
 
 .input-container {
@@ -51,12 +52,12 @@
 
 .search-icon {
   position: absolute;
-  right: 85px;
+  right: 100px;
   cursor: pointer;
   min-width: 30px;
 }
 
-@media screen and (min-width: 27rem) {
+@media screen and (min-width: 26rem) {
   .login .container {
     padding: 0 var(--space-xbig);
   }
@@ -71,92 +72,26 @@
   }
 
   .search-icon {
-    right: 105px; 
+    right: 105px;
   }
 }
 
 @media screen and (min-width: 43rem) {
   .container .hero-img {
     object-fit: cover;
-  } 
+  }
 
-   .login .container {
+  .login .container {
     padding: 0 var(--space-xxbig);
   }
 
   .card {
-    bottom: -50px;
-  }
-
-  
-}
-
-
-
-
-/* 
-
-@media screen and (min-width: 27rem) {  
-  .login {
-    padding: 0 var(--space-big);
-  }
-  
-  .login .hero-img {
-    width: 400px;
-    height: 570px;
-    object-fit: cover;
-  } 
-
-  .login .container {
-    width: 345px;
-    left: 50px; 
-    margin: 25px;
-  }
-
-  .input-container img {
-    right: 100px;
+    bottom: -80px;
   }
 }
 
-@media screen and (min-width: 43rem) {
-  
-  
-  .login .hero-img {
-    width: 470px;
-    height: 570px;
-  } 
-
+@media screen and (min-width: 62rem) {
   .login .container {
-    bottom: 50px;
-    left: 520px;
-    width: 250px;
-    height: 400px;
-    padding: var(--space-big);
-    margin-right: var(--space-big) ;
-    background-color: red;
-    
+    padding: 0 432px;
   }
-
-  .container .login-card {
-    height: 400px;
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .input-container img {
-    right: 80px;
-  }
-
-  @media screen and (min-width: 62rem) {
-    .login {
-      padding: 0 var(--space-xxbig) ;
-    }
-
-    .login .container {
-      left: 740px;      
-    }
-  }
-} 
- */
+}

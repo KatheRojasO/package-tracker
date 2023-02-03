@@ -3,7 +3,7 @@ import axios from "axios";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./css/styles.css";
 import Search from "./pages/Search";
-import PackageSection from "./pages/PackageSection";
+import ParcelSection from "./pages/ParcelSection";
 import TrackingSection from "./pages/TrackingSection";
 
 export default function App() {
@@ -25,7 +25,7 @@ export default function App() {
         <Routes>
         <Route
             path="/"
-            element={<Search phone={deliveries.user_phone} />}
+            element={<Search phone={deliveries[0].user_phone} />}
           />
           <Route
             path="/parcels"
@@ -33,7 +33,7 @@ export default function App() {
           />
           <Route 
             path="/parcels/:parcel_id"
-            element={<PackageSection deliveries={deliveries} />}
+            element={<ParcelSection deliveries={deliveries} />}
           />
         </Routes>
       </BrowserRouter>

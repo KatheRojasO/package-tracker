@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import PackageInfo from "../components/PackageInfo";
+import ParcelInfo from "../components/ParcelInfo";
 
-export default function PackageSection({ deliveries }) { 
+export default function ParcelSection({ deliveries }) { 
 
   const params = useParams();
 
@@ -12,7 +12,7 @@ export default function PackageSection({ deliveries }) {
 
   return (
     <div className="parcel">
-      <PackageInfo parcel= {parcel[0]} />
+      <ParcelInfo parcel= {parcel[0]} />
     </div>
   );
 }

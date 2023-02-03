@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
-import PackageCard from "../components/PackageCard";
+import ParcelCard from "../components/ParcelCard";
 
 export default function TrackingSection({ deliveries }) {
   
@@ -18,7 +18,7 @@ export default function TrackingSection({ deliveries }) {
       );
     }
     return filteredParcels.map((filteredParcel) => (
-        <PackageCard parcel={filteredParcel} /> 
+        <ParcelCard parcel={filteredParcel} /> 
     ));
   };
 
