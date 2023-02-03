@@ -5,8 +5,8 @@ export default function PackageCard({ parcel }) {
   const { status, parcel_id, sender } = parcel;
 
   return (
-    <Link to={`parcel/${parcel_id}`}>
-      <div className="container">
+    <Link to={`/parcels/${parcel_id}`}>
+      <div className="track-container">
         <div className="card">
           <div className="icon-container">
             <h2>{sender}</h2>

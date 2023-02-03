@@ -2,8 +2,8 @@
 
 html {
   font-family: "Poppins", sans-serif;
-  background-color: #f5f5f5;
-  color: var(--dark-blue)
+  background-color: var(--white);
+  color: var(--dark-blue);
 }
 
 body {
@@ -11,11 +11,15 @@ body {
   padding: 0;
 }
 
-.container {
+.container,
+.track-container {
   position: relative;
   padding: var(--space-big);
-  padding-bottom: 0;
   max-width: 960px;
+}
+
+.track-container {
+  padding-bottom: var(--space-small);
 }
 
 button {
@@ -28,7 +32,7 @@ a {
   color: var(--dark-blue);
 }
 
-.container .card {
+.track-container .card {
   background-color: var(--beige);
   border-radius: 20px;
   padding: var(--space-big);
@@ -38,30 +42,28 @@ a {
   color: var(--lemon-green);
 }
 
-
 .container .header {
   padding: var(--space-medium) 0;
   justify-content: space-between;
 }
 
-@media screen and (min-width: 43rem){
-  .container {
+@media screen and (min-width: 43rem) {
+  .container,
+  .track-container {
     padding: var(--space-big) var(--space-xbig) 0;
   }
-  
 }
 
-@media screen and (min-width: 62rem){
-  .container {
-    padding: var(--space-big) var(--space-xxbig) 0;
-  }
-  
-}
-
-@media screen and (min-width: 82rem){
-  .container {
+@media screen and (min-width: 62rem) {
+  .container,
+  .track-container {
     padding: var(--space-big) var(--space-xxbig) 0;
   }
 }
 
-
+@media screen and (min-width: 82rem) {
+  .container,
+  .track-container {
+    padding: var(--space-big) var(--space-xxbig) 0;
+  }
+}

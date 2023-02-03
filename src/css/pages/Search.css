@@ -1,14 +1,20 @@
 .login {
+  display: flex;
   position: relative;
   text-align: center;
 }
 
-.login .hero-img {
+.login .container {
+  padding: 0;
+  max-width: 960px;
+}
+
+.container .hero-img {
   width: 100%;
 }
 
-.login .container {
-  height: 200px;
+.card {
+  height: 220px;
   position: absolute;
   bottom: -140px;
   border-radius: 20px;
@@ -16,33 +22,19 @@
   box-shadow: 0 0 5px #333;
 }
 
-.container .login-card {
+.info-card {
   background-color: var(--beige);
-  height: 200px;
+  height: 160px;
   border-radius: 20px;
-}
-
-.login-card h2,
-.login-card p, 
-.input-container {
-    padding: var(--space-medium) var(--space-medium) 0 var(--space-medium)  ;
+  margin: var(--space-medium);
+  padding: var(--space-medium) var(--space-big)var(--space-small)var(--space-big);
 }
 
 .input-container {
-  
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.input-container img {
-  position: absolute;
-  right: 110px;
-  cursor: pointer;
-}
-
-.search-icon {
-  min-width: 30px;
+  padding: 0;
 }
 
 .input-field {
@@ -56,3 +48,115 @@
 .input-field:focus {
   border: 2px solid var(--dark-blue);
 }
+
+.search-icon {
+  position: absolute;
+  right: 85px;
+  cursor: pointer;
+  min-width: 30px;
+}
+
+@media screen and (min-width: 27rem) {
+  .login .container {
+    padding: 0 var(--space-xbig);
+  }
+
+  .container .hero-img {
+    width: 415px;
+  }
+
+  .card {
+    min-width: 415px;
+    max-width: 415px;
+  }
+
+  .search-icon {
+    right: 105px; 
+  }
+}
+
+@media screen and (min-width: 43rem) {
+  .container .hero-img {
+    object-fit: cover;
+  } 
+
+   .login .container {
+    padding: 0 var(--space-xxbig);
+  }
+
+  .card {
+    bottom: -50px;
+  }
+
+  
+}
+
+
+
+
+/* 
+
+@media screen and (min-width: 27rem) {  
+  .login {
+    padding: 0 var(--space-big);
+  }
+  
+  .login .hero-img {
+    width: 400px;
+    height: 570px;
+    object-fit: cover;
+  } 
+
+  .login .container {
+    width: 345px;
+    left: 50px; 
+    margin: 25px;
+  }
+
+  .input-container img {
+    right: 100px;
+  }
+}
+
+@media screen and (min-width: 43rem) {
+  
+  
+  .login .hero-img {
+    width: 470px;
+    height: 570px;
+  } 
+
+  .login .container {
+    bottom: 50px;
+    left: 520px;
+    width: 250px;
+    height: 400px;
+    padding: var(--space-big);
+    margin-right: var(--space-big) ;
+    background-color: red;
+    
+  }
+
+  .container .login-card {
+    height: 400px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .input-container img {
+    right: 80px;
+  }
+
+  @media screen and (min-width: 62rem) {
+    .login {
+      padding: 0 var(--space-xxbig) ;
+    }
+
+    .login .container {
+      left: 740px;      
+    }
+  }
+} 
+ */

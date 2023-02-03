@@ -24,15 +24,15 @@ export default function App() {
       <BrowserRouter>
         <Routes>
         <Route
-            path="/search"
+            path="/"
             element={<Search phone={deliveries.user_phone} />}
           />
           <Route
-            path="/"
+            path="/parcels"
             element={<TrackingSection deliveries={deliveries} />}
           />
           <Route 
-            path="/parcel/:parcel_id"
+            path="/parcels/:parcel_id"
             element={<PackageSection deliveries={deliveries} />}
           />
         </Routes>

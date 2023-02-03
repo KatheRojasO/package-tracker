@@ -2,7 +2,7 @@
   --dark-blue: #2a2b45;
   --beige: #f6ece1;
   --lemon-green: #6ba942;
-  --black: #f5f5f5;
+  --white: #f5f5f5;
 }
 
 :root {
@@ -10,5 +10,6 @@
   --space-medium: 16px;
   --space-big: 32px;
   --space-xbig: 80px;
-  --space-xxbig: 216px
+  --space-xxbig: 216px;
+  
 }

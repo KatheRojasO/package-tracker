@@ -37,6 +37,18 @@
   width: 150px;
   height: 200px;
   position: absolute;
-  top: 95%;
+  top: 105%;
   left: 35%;
+}
+
+@media screen and (min-width: 43rem){
+  .bg-img {
+    left: 40%;
+  }
+}
+
+@media screen and (min-width: 62rem){
+  .bg-img {
+    left: 42%;
+  }
 }

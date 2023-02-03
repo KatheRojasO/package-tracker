@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { getFullDate, getShortTime } from "../service/date"
 import Map from "./Map";
 import locationIcon from "../assets/icons/location-icon.png";
 import goBackIcon from "../assets/icons/go-back-icon.png";
@@ -18,6 +19,9 @@ export default function PackageInfo({ parcel }) {
   } = parcel;
 
   const navigate = useNavigate();
+
+  const date = getFullDate(eta)  
+  const time = getShortTime(eta)
 
   return (
     <div className="container">
@@ -46,7 +50,7 @@ export default function PackageInfo({ parcel }) {
           longitude={location_coordinate_longitude}
         />
         <div className="additional-info">
-          <span>Arrival: <b>{eta}</b></span>
+          <span>Arrival: {date} {time}</span>
           <span>Notes: <b>{notes}</b></span>
         </div>
       </div>

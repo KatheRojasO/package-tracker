@@ -3,9 +3,6 @@ import Header from "../components/Header";
 import PackageCard from "../components/PackageCard";
 
 export default function TrackingSection({ deliveries }) {
-
-  console.log({deliveries});
-  console.log(deliveries);
   
   const [showDelivered, setShowDelivered] = useState(false);
 
