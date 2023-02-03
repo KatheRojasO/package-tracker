@@ -86,12 +86,12 @@
   }
 
   .card {
-    bottom: -80px;
+    bottom: -168px;
   }
 }
 
 @media screen and (min-width: 62rem) {
   .login .container {
-    padding: 0 432px;
+    padding: 0 512px;
   }
 }
