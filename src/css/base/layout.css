@@ -12,18 +12,18 @@ body {
 }
 
 .container,
-.track-container {
+.track-section {
   position: relative;
   padding: var(--space-big);
   max-width: 960px;
 }
 
-.track-container {
+.track-section {
   padding-bottom: var(--space-small);
 }
 
 button {
-  color: var(--dark-blue);
+  color: var(--white);
   padding: var(--space-small);
 }
 
@@ -32,7 +32,8 @@ a {
   color: var(--dark-blue);
 }
 
-.track-container .card {
+.track-section .card-container,
+.parcel-info .card-container {
   background-color: var(--beige);
   border-radius: 20px;
   padding: var(--space-big);
@@ -42,28 +43,28 @@ a {
   color: var(--lemon-green);
 }
 
-.container .header {
+.parcel-info .header {
   padding: var(--space-medium) 0;
   justify-content: space-between;
 }
 
 @media screen and (min-width: 43rem) {
   .container,
-  .track-container {
+  .track-section {
     padding: var(--space-big) var(--space-xbig) 0;
   }
 }
 
 @media screen and (min-width: 62rem) {
   .container,
-  .track-container {
+  .track-section {
     padding: var(--space-big) var(--space-xxbig) 0;
   }
 }
 
 @media screen and (min-width: 82rem) {
   .container,
-  .track-container {
+  .track-section {
     padding: var(--space-big) var(--space-xxbig) 0;
   }
 }

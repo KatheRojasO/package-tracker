@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import img from "../assets/images/hero-mobile.jpg";
 import searchIcon from "../assets/icons/search-button.png";
 
-export default function Search({ phone }) {
+export default function Search({ deliveries }) {
   const [phoneInput, setPhoneInput] = useState("");
   const navigate = useNavigate();
 
@@ -12,7 +12,9 @@ export default function Search({ phone }) {
   };
 
   const validatePhone = () => {
-    if (phoneInput !== phone) {
+    const userPhone = deliveries[0].user_phone
+
+    if (phoneInput !== userPhone) {
       alert("No parcels");
     } else {
       navigate("/parcels");

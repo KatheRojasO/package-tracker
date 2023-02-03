@@ -25,7 +25,7 @@ export default function App() {
         <Routes>
         <Route
             path="/"
-            element={<Search phone={deliveries[0].user_phone} />}
+            element={<Search deliveries={deliveries} />}
           />
           <Route
             path="/parcels"

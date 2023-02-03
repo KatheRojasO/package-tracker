@@ -6,8 +6,8 @@ export default function ParcelCard({ parcel }) {
 
   return (
     <Link to={`/parcels/${parcel_id}`}>
-      <div className="track-container">
-        <div className="card">
+      <div className="track-section">
+        <div className="card-container">
           <div className="icon-container">
             <h2>{sender}</h2>
             <img src={nextIcon} alt="next-icon" />
