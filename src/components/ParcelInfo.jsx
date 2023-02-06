@@ -6,7 +6,9 @@ import locationIcon from "../assets/icons/location-icon.png";
 import goBackIcon from "../assets/icons/go-back-icon.png";
 import img from "../assets/images/parcel.png";
 
+// Over 50 lines long
 export default function ParcelInfo({ parcel }) {
+  // this part of the destructuring is unavoidable so is ok
   const {
     status,
     eta,
@@ -23,6 +25,7 @@ export default function ParcelInfo({ parcel }) {
   const date = getFullDate(eta);
   const time = getShortTime(eta);
 
+  // this can be refactored a lot
   return (
     <div className="parcel-info">
       <div className="container">

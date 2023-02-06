@@ -4,7 +4,7 @@ import img from "../assets/images/hero-mobile.jpg";
 import searchIcon from "../assets/icons/search-button.png";
 
 export default function Search({ deliveries }) {
-  const Swal = require('sweetalert2');
+  const Swal = require("sweetalert2"); // was not neccesary at all, but hey! nice modals!
   const [phoneInput, setPhoneInput] = useState("");
   const navigate = useNavigate();
 
@@ -13,14 +13,14 @@ export default function Search({ deliveries }) {
   };
 
   const validatePhone = () => {
-    const userPhone = deliveries[0].user_phone
+    const userPhone = deliveries[0].user_phone;
 
     if (phoneInput !== userPhone) {
       Swal.fire(
-        'Seems something is wrong',
-        'The user you typed does not exist',
-        'warning'
-      )
+        "Seems something is wrong",
+        "The user you typed does not exist",
+        "warning"
+      );
     } else {
       navigate("/parcels");
     }
@@ -47,6 +47,8 @@ export default function Search({ deliveries }) {
                 src={searchIcon}
                 alt="search-icon"
               />
+              {/* 5 divs? Do we get a prize if we put 10 in a row? Remember to simplify */}
+              {/* Check this image for reference: https://i.imgur.com/BtjZedW.jpg */}
             </div>
           </div>
         </div>
