@@ -57,10 +57,10 @@ export default function ParcelInfo({ parcel }) {
           />
           <div className="additional-info">
             <span>
-              Arrival: {date} {time}
+              <b>Arrival:</b> {date} {time}
             </span>
             <span>
-              Notes: <b>{notes}</b>
+              <b>Notes:</b> <b>{notes}</b>
             </span>
           </div>
         </div>

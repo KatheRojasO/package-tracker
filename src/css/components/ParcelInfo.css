@@ -1,3 +1,7 @@
+.parcel-info .container {
+  width: 500px;
+}
+
 .card-header,
 .header,
 .location {
@@ -37,8 +41,8 @@
   width: 150px;
   height: 200px;
   position: absolute;
-  top: 105%;
-  left: 35%;
+  top: 115%;
+  left: 50%;
 }
 
 @media screen and (min-width: 43rem){
@@ -49,6 +53,6 @@
 
 @media screen and (min-width: 62rem){
   .bg-img {
-    left: 42%;
+    left: 45%;
   }
 }
