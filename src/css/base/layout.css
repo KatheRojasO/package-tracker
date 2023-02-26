@@ -16,6 +16,14 @@ body {
   position: relative;
   padding: var(--space-big);
   max-width: 960px;
+  margin: 0 auto;
+}
+
+.login .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+
 }
 
 .track-section {
