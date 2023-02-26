@@ -5,17 +5,20 @@ export default function ParcelCard({ parcel }) {
   const { status, parcel_id, sender } = parcel;
 
   return (
-    <Link to={`/parcels/${parcel_id}`}>
-      <div className="track-section">
+    <div className="track-section">
+      <Link to={`/parcels/${parcel_id}`}>
         <div className="card-container">
           <div className="icon-container">
             <h2>{sender}</h2>
             <img src={nextIcon} alt="next-icon" />
           </div>
-          <span className="status">{status}</span><br></br>
-          <span> Parcel code: <b>{parcel_id}</b> </span>
+          <span className="status">{status}</span>
+          <br></br>
+          <span>
+            Parcel code: <b>{parcel_id}</b>
+          </span>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 }

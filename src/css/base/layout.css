@@ -11,23 +11,10 @@ body {
   padding: 0;
 }
 
-.container,
-.track-section {
-  position: relative;
+.container {
   padding: var(--space-big);
   max-width: 960px;
   margin: 0 auto;
-}
-
-.login .container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0;
-
-}
-
-.track-section {
-  padding-bottom: var(--space-small);
 }
 
 button {
@@ -56,23 +43,4 @@ a {
   justify-content: space-between;
 }
 
-@media screen and (min-width: 43rem) {
-  .container,
-  .track-section {
-    padding: var(--space-big) var(--space-xbig) 0;
-  }
-}
 
-@media screen and (min-width: 62rem) {
-  .container,
-  .track-section {
-    padding: var(--space-big) var(--space-xxbig) 0;
-  }
-}
-
-@media screen and (min-width: 82rem) {
-  .container,
-  .track-section {
-    padding: var(--space-big) var(--space-xxbig) 0;
-  }
-}

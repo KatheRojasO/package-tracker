@@ -26,11 +26,11 @@ export default function App() {
   }, []);
 
   return (
-    <>
+    <div className="App">
       <BrowserRouter>
         <Routes>
           <Route
-            path="/parcels"
+            path="/"
             element={<TrackingSection deliveries={deliveries} />}
           />
           <Route
@@ -39,6 +39,6 @@ export default function App() {
           />
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 }

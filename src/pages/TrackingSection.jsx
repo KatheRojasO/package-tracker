@@ -3,7 +3,6 @@ import Header from "../components/Header";
 import ParcelCard from "../components/ParcelCard";
 
 export default function TrackingSection({ deliveries }) {
-  
   const [showDelivered, setShowDelivered] = useState(false);
 
   const parcelCards = () => {
@@ -18,14 +17,17 @@ export default function TrackingSection({ deliveries }) {
       );
     }
     return filteredParcels.map((filteredParcel) => (
-        <ParcelCard parcel={filteredParcel} /> 
+      <ParcelCard parcel={filteredParcel} />
     ));
   };
 
   return (
     <div className="tracking-section">
       <Header setShowDelivered={setShowDelivered} />
-      {parcelCards()}
+      <div className="tracking-container">
+        <h1>Welcome!</h1>
+        {parcelCards()}
+      </div>
     </div>
   );
 }
