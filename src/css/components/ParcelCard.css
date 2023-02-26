@@ -1,12 +1,16 @@
 .track-section {
-    padding-top: 20px;
-    width: 500px;
+  padding-top: 20px;
+  width: 350px;
 }
 
 .icon-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-
+@media screen and (min-width: 43rem) {
+  .track-section {
+    width: 500px;
+  }
+}

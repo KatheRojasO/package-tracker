@@ -1,5 +1,5 @@
 .parcel-info .container {
-  width: 500px;
+  width: 350px;
 }
 
 .card-header,
@@ -42,12 +42,17 @@
   height: 200px;
   position: absolute;
   top: 115%;
-  left: 50%;
+  left: 35%;
+  z-index: -1;
 }
 
 @media screen and (min-width: 43rem){
   .bg-img {
     left: 40%;
+  }
+
+  .parcel-info .container {
+    width: 500px;
   }
 }
 
